@@ -1,0 +1,120 @@
+* {
+	color: #001E50;
+	font-family: 'Mulish', sans-serif;
+}
+
+body {
+	margin: 2vh 4vh;
+}
+
+h1 {
+	text-align: center;
+	font-size: 3em;
+	font-weight: bold;
+	margin:auto;
+}
+
+#content {
+	margin: 2em auto;
+	width: 40em;
+	max-width: 80vw;
+	transition: width .5s ease;
+}
+
+#logo {
+	height:8em;
+	margin: 3em;
+}
+
+#header {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	align-items: center;
+	width: 80vw;
+	margin: 0 auto;
+}
+
+li {
+	transition: all .5s ease;
+	text-align: left;
+}
+
+li:hover {
+	color:red;
+	text-shadow: red 2px 1px 2px;
+	cursor: pointer;
+}
+
+@keyframes flyOut {
+	from {
+		left:0;
+		position: relative;
+	}
+	to {
+		left: -100vw;
+		position:relative;
+	}
+
+}
+
+#newlineRemoverDiv textarea {
+	height: 8em;
+	width: 95%;
+	margin: 1%;
+}
+
+.pageComponent {
+	border: solid black 2px;
+	border-radius: 5px;
+	padding: 5%;
+	margin: 2em;
+	transition: box-shadow .2s ease;
+	max-width: 80vw;
+}
+
+.pageComponent:hover {
+	box-shadow: 0 0.2em 0.75em rgba(0, 0, 0, 0.1), 0 0.1em 0.25em rgba(0, 0, 0, 0.2);
+}
+
+.pageComponent > h2 {
+	margin: 0 0 1em 0;
+}
+
+.pageComponent * {
+		max-width: 100%;
+}
+
+.hidden {
+	display:none;
+}
+
+.fullscreen {
+	width:100vw;
+	height:100vh;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: none;
+}
+.fullscreen .fullscreentext {
+	font-size: 10em;
+	text-align: center;
+	overflow-wrap: anywhere;
+}
+
+ul {
+	padding-left: .5em;
+	margin-bottom: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+	#content {
+		width: 90%;
+	}
+	
+	* {
+		word-wrap: anywhere;
+	}
+}

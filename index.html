@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>ÖGK-Tool</title>
+		<link rel="stylesheet" href="style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+	</head>
+	<body>
+		
+		<div id=header>
+			<img src="logo.png" alt="Logo" id="logo"></img>
+			<h1>ÖGK-Tool</h1>
+		</div>
+		
+		<div id="content">
+		
+			<div id="listDiv" class="pageComponent">
+				<h2>In Liste eintragen:</h2>
+				<input id="inputText" placeholder="neue VSNR"></input>
+				<ul id="liste">
+				</ul>
+			</div>
+			
+			<div id="searchDiv" class="pageComponent">
+				<h2>Suchen</h2>
+				<input id="inputSearch" placeholder="Suchen"></input>
+				<span id="result"></span>
+			</div>
+			
+			<div id="awayDiv" class="pageComponent">
+				<h2>Abwesenheitsnachricht</h2>
+				<input id="wegText"></input>
+				<div id="weg" class="hidden">
+					<span class="fullscreentext" id="text1"></span>
+				</div>
+			</div>
+			
+			<div id="newlineRemoverDiv" class="pageComponent">
+				<h2>Absatzentferner</h2>
+				<textarea id="entfernerInput"></textarea></br>
+				<textarea id="entfernerOutput" readonly></textarea>
+			</div>
+			
+		</div>
+
+		<script src="script.js"></script>
+	</body>
+</html>
